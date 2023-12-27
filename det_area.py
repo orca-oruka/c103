@@ -37,7 +37,7 @@ for i in range(int(d_max/step)):
     else:
         g2 = np.sqrt(d**2 - R2**2)
     h2 = np.sqrt(d**2 + R2**2)
-    dist[i+1] = d
+    dist[i+1] = 2 * d
     mono[i+1] = 4 * integrate.quad(f1, g1, h1)[0]
     bi[i+1] = 4 * integrate.quad(f2, g2, h2)[0]
 
