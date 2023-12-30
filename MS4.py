@@ -12,7 +12,7 @@ rec_dist = 15       # upper limitation of source-receiver distance
 tgt_side = 20       # side length of detection area
 tgt_diff = 0.1      # distance of detection points
 db = 0.1            # direct blast effect
-trial = int(10000)  # number of trial, reproducing detection/nondetection point
+trial = int(10000)  # number of trial, producing detection point
 
 det = []
 P = []
@@ -32,7 +32,7 @@ for i in range(int(rec_dist/rec_loc_diff) + 1):
     receiver[5] = [receiver[1][0] + rec_loc_diff / 2, receiver[1][1] - rec_loc_diff * np.sqrt(3) / 2]
     det.append(0)
 
-	# detection ppoints
+	# detection points
     x = -tgt_side/2
     for j in range(int(tgt_side/tgt_diff)):
         target = 0
