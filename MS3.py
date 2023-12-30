@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # parameters
 det_range = 3       # detection range
-s_quant = 1         # sources quantity, 
+s_quant = 1         # sources quantity
 r_quant = 4         # receivers quantity
 rec_loc_diff = 0.1  # location movement step of recerivers
 rec_dist = 15       # upper limitation of source-receiver distance
@@ -18,7 +18,7 @@ det = []
 P = []
 P_max = 0
 
-# initial orientation of sonobuoy field
+# initial sonobuoy field
 source = [0.0,0.0]
 receiver = [[0.0,0.0],[0.0,0.0],[0.0,0.0],[0.0,0.0]]
 
